@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bushido no Keizai - Nghệ Thuật Làm Giàu Samurai</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="kanji">武士道</span>
+                <span class="title">Bushido no Keizai</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Trang Chủ</a></li>
+                <li><a href="#book">Sách</a></li>
+                <li><a href="#about">Giới Thiệu</a></li>
+                <li><a href="#contact">Liên Hệ</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="kanji-large">武士道の経済</span>
+                    <span class="subtitle">Nghệ Thuật Làm Giàu Samurai</span>
+                </h1>
+                <p class="hero-description">
+                    Khám phá những nguyên tắc làm giàu từ tinh thần Samurai cổ đại Nhật Bản. 
+                    Học cách áp dụng Bushido vào kinh doanh hiện đại.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn-primary" onclick="openBook()">Đọc Sách Ngay</button>
+                    <button class="btn-secondary" onclick="scrollToSection('about')">Tìm Hiểu Thêm</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="samurai-illustration">
+                    <div class="samurai-figure"></div>
+                    <div class="cherry-blossoms"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Book Section -->
+    <section id="book" class="book-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="kanji">書</span>
+                <span>Cuốn Sách</span>
+            </h2>
+            
+            <div class="book-container">
+                <div class="book-navigation">
+                    <button class="nav-btn prev-btn" onclick="previousChapter()">
+                        <span class="kanji">前</span>
+                    </button>
+                    <div class="chapter-indicator">
+                        <span id="current-chapter">1</span> / <span id="total-chapters">7</span>
+                    </div>
+                    <button class="nav-btn next-btn" onclick="nextChapter()">
+                        <span class="kanji">次</span>
+                    </button>
+                </div>
+
+                <div class="book-content">
+                    <div id="chapter-1" class="chapter active">
+                        <h3 class="chapter-title">Chương 1: Tinh Thần Bushido</h3>
+                        <div class="chapter-content">
+                            <p>Trong thời kỳ Edo của Nhật Bản, các Samurai không chỉ là những chiến binh dũng cảm mà còn là những nhà quản lý tài chính tài ba. Họ hiểu rằng sự giàu có không chỉ đến từ vũ lực, mà còn từ trí tuệ và đạo đức.</p>
+                            
+                            <div class="principle-box">
+                                <h4>Nguyên Tắc 1: Gi (義) - Công Lý</h4>
+                                <p>Làm giàu phải dựa trên nền tảng đạo đức và công lý. Mọi giao dịch kinh doanh phải công bằng và minh bạch.</p>
+                            </div>
+
+                            <p>Samurai Miyamoto Musashi từng nói: "Kẻ chiến thắng thực sự không phải là người đánh bại kẻ thù, mà là người đánh bại chính mình." Trong kinh doanh, điều này có nghĩa là vượt qua những cám dỗ ngắn hạn để đạt được thành công dài hạn.</p>
+                        </div>
+                    </div>
+
+                    <div id="chapter-2" class="chapter">
+                        <h3 class="chapter-title">Chương 2: Yu (勇) - Dũng Cảm</h3>
+                        <div class="chapter-content">
+                            <p>Dũng cảm trong kinh doanh không phải là liều lĩnh, mà là sự can đảm để đưa ra quyết định đúng đắn trong thời điểm khó khăn.</p>
+                            
+                            <div class="principle-box">
+                                <h4>Nguyên Tắc 2: Yu (勇) - Dũng Cảm</h4>
+                                <p>Đối mặt với rủi ro một cách thông minh. Phân tích kỹ lưỡng trước khi hành động, nhưng không do dự khi cơ hội đến.</p>
+                            </div>
+
+                            <p>Thương nhân Nhật Bản cổ đại hiểu rằng thị trường luôn biến động. Họ dũng cảm đầu tư vào những ý tưởng mới, nhưng luôn có kế hoạch dự phòng.</p>
+                        </div>
+                    </div>
+
+                    <div id="chapter-3" class="chapter">
+                        <h3 class="chapter-title">Chương 3: Jin (仁) - Nhân Từ</h3>
+                        <div class="chapter-content">
+                            <p>Nhân từ trong kinh doanh có nghĩa là đối xử tốt với nhân viên, khách hàng và đối tác. Sự giàu có thực sự đến từ việc tạo ra giá trị cho người khác.</p>
+                            
+                            <div class="principle-box">
+                                <h4>Nguyên Tắc 3: Jin (仁) - Nhân Từ</h4>
+                                <p>Xây dựng mối quan hệ dựa trên sự tin tưởng và tôn trọng. Lợi nhuận sẽ tự nhiên đến khi bạn phục vụ người khác một cách chân thành.</p>
+                            </div>
+
+                            <p>Các doanh nhân Nhật Bản nổi tiếng với văn hóa "kaizen" - cải tiến liên tục. Họ luôn tìm cách cải thiện sản phẩm và dịch vụ để phục vụ khách hàng tốt hơn.</p>
+                        </div>
+                    </div>
+
+                    <div id="chapter-4" class="chapter">
+                        <h3 class="chapter-title">Chương 4: Rei (礼) - Lễ Nghi</h3>
+                        <div class="chapter-content">
+                            <p>Lễ nghi trong kinh doanh thể hiện qua cách giao tiếp, đàm phán và xây dựng mối quan hệ. Sự tôn trọng tạo nên uy tín và mở ra cơ hội.</p>
+                            
+                            <div class="principle-box">
+                                <h4>Nguyên Tắc 4: Rei (礼) - Lễ Nghi</h4>
+                                <p>Luôn giữ phép lịch sự và tôn trọng trong mọi tương tác. Danh tiếng tốt là tài sản quý giá nhất của doanh nhân.</p>
+                            </div>
+
+                            <p>Văn hóa Nhật Bản coi trọng việc trao đổi danh thiếp (meishi) như một nghi thức quan trọng. Điều này thể hiện sự tôn trọng và thiết lập mối quan hệ chuyên nghiệp.</p>
+                        </div>
+                    </div>
+
+                    <div id="chapter-5" class="chapter">
+                        <h3 class="chapter-title">Chương 5: Makoto (誠) - Thành Thật</h3>
+                        <div class="chapter-content">
+                            <p>Thành thật là nền tảng của mọi giao dịch kinh doanh thành công. Sự tin cậy được xây dựng qua thời gian và không thể mua được bằng tiền.</p>
+                            
+                            <div class="principle-box">
+                                <h4>Nguyên Tắc 5: Makoto (誠) - Thành Thật</h4>
+                                <p>Luôn giữ lời hứa và minh bạch trong mọi giao dịch. Sự thành thật sẽ mang lại lợi ích dài hạn vượt xa những lợi ích ngắn hạn.</p>
+                            </div>
+
+                            <p>Trong văn hóa Nhật Bản, một lời hứa có giá trị hơn cả hợp đồng. Điều này tạo nên môi trường kinh doanh dựa trên sự tin tưởng lẫn nhau.</p>
+                        </div>
+                    </div>
+
+                    <div id="chapter-6" class="chapter">
+                        <h3 class="chapter-title">Chương 6: Meiyo (名誉) - Danh Dự</h3>
+                        <div class="chapter-content">
+                            <p>Danh dự trong kinh doanh có nghĩa là bảo vệ uy tín của bản thân và tổ chức. Một khi mất danh dự, rất khó để lấy lại.</p>
+                            
+                            <div class="principle-box">
+                                <h4>Nguyên Tắc 6: Meiyo (名誉) - Danh Dự</h4>
+                                <p>Bảo vệ danh tiếng bằng mọi giá. Sẵn sàng hy sinh lợi ích ngắn hạn để giữ gìn danh dự dài hạn.</p>
+                            </div>
+
+                            <p>Samurai sẵn sàng mổ bụng tự sát (seppuku) để bảo vệ danh dự. Trong kinh doanh hiện đại, điều này có nghĩa là sẵn sàng chịu trách nhiệm và sửa chữa sai lầm.</p>
+                        </div>
+                    </div>
+
+                    <div id="chapter-7" class="chapter">
+                        <h3 class="chapter-title">Chương 7: Chugi (忠義) - Trung Thành</h3>
+                        <div class="chapter-content">
+                            <p>Trung thành với mục tiêu, giá trị và con người. Sự trung thành tạo nên sức mạnh tập thể và đảm bảo thành công bền vững.</p>
+                            
+                            <div class="principle-box">
+                                <h4>Nguyên Tắc 7: Chugi (忠義) - Trung Thành</h4>
+                                <p>Trung thành với sứ mệnh của doanh nghiệp và cam kết với khách hàng. Sự trung thành tạo nên lòng tin và mối quan hệ lâu dài.</p>
+                            </div>
+
+                            <p>Kết luận: Áp dụng 7 nguyên tắc Bushido vào kinh doanh sẽ giúp bạn không chỉ làm giàu về vật chất mà còn giàu có về tinh thần. Hãy nhớ rằng con đường làm giàu chân chính là con đường phục vụ người khác với đạo đức và trí tuệ.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="kanji">関</span>
+                <span>Về Tác Giả</span>
+            </h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Cuốn sách "Bushido no Keizai" được viết dựa trên nghiên cứu sâu về văn hóa Samurai và kinh doanh Nhật Bản cổ đại. Tác giả đã dành nhiều năm nghiên cứu về cách các Samurai áp dụng nguyên tắc Bushido vào việc quản lý tài chính và kinh doanh.</p>
+                    <p>Những nguyên tắc trong cuốn sách này không chỉ phù hợp với thời kỳ cổ đại mà còn có thể áp dụng hiệu quả trong thời đại kinh doanh hiện đại.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">7</span>
+                        <span class="stat-label">Nguyên Tắc</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">100+</span>
+                        <span class="stat-label">Ví Dụ Thực Tế</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Năm Lịch Sử</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="kanji">連</span>
+                <span>Liên Hệ</span>
+            </h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Thông Tin Liên Hệ</h3>
+                    <p>Email: info@bushido-keizai.com</p>
+                    <p>Điện thoại: +84 123 456 789</p>
+                    <p>Địa chỉ: Tokyo, Nhật Bản</p>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <input type="text" placeholder="Họ và tên" required>
+                        <input type="email" placeholder="Email" required>
+                        <textarea placeholder="Nội dung tin nhắn" rows="5" required></textarea>
+                        <button type="submit" class="btn-primary">Gửi Tin Nhắn</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="kanji">武士道</span>
+                    <span>Bushido no Keizai</span>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Trang Chủ</a>
+                    <a href="#book">Sách</a>
+                    <a href="#about">Giới Thiệu</a>
+                    <a href="#contact">Liên Hệ</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Bushido no Keizai. Tất cả quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
